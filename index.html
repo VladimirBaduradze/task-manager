@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>ToDo app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="display-4 mb-2">Task manager</div>
+      <div class="h4 mb-5">List of Tasks</div>
+
+      <!-- List of tasks -->
+      <div class="card mb-4">
+        <ul id="tasksList" class="list-group list-group-flush">
+          <!-- <li id="emptyList" class="list-group-item empty-list">
+            <img src="./img/notes.png" alt="Empty" width="48" class="mt-3" />
+            <div class="empty-list__title">Task List is Empty</div>
+          </li> -->
+
+          <!-- <li class="list-group-item d-flex justify-content-between task-item">
+            <span class="task-title">Buy milk</span>
+            <div class="task-item__buttons">
+              <button type="button" data-action="done" class="btn-action">
+                <img src="./img/tick.svg" alt="Done" width="18" height="18" />
+              </button>
+              <button type="button" data-action="delete" class="btn-action">
+                <img src="./img/cross.svg" alt="Done" width="18" height="18" />
+              </button>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+      <!-- //List of tasks -->
+
+      <!-- Form -->
+      <div class="card bg-light">
+        <div class="card-header">Add new task</div>
+        <div class="card-body">
+          <form id="form">
+            <div class="form-group">
+              <small id="emailHelp" class="form-text text-muted"
+                >Type you task in the field below.</small
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="taskInput"
+                placeholder="Your task here"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg active">
+              Add
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
